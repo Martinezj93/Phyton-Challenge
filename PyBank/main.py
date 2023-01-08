@@ -66,4 +66,3 @@ with open (output_path,"w") as output_file:
     output_file.writelines(str(average_change) + '\n')
     output_file.writelines(str(greatest_increase) + '\n')
     output_file.writelines(str(greatest_decrease) + '\n')
-    output_file.writelines("End of the report")
