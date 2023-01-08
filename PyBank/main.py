@@ -4,7 +4,6 @@
 
 import os
 import csv
-import string
 
 # Read and open CSV file:
 
@@ -59,10 +58,11 @@ with open(csvpath,"r") as csvfile:
 
 output_path = os.path.join("Analysis","Analysis.txt")
 with open (output_path,"w") as output_file:
-    output_file.writelines(str(header) + '\n')
-    output_file.writelines(str(separator) + '\n')
-    output_file.writelines(str(total_months) + '\n')
-    output_file.writelines(str(total_amount) + '\n')
-    output_file.writelines(str(average_change) + '\n')
-    output_file.writelines(str(greatest_increase) + '\n')
-    output_file.writelines(str(greatest_decrease) + '\n')
+    output_file.write(str(header) + '\n')
+    output_file.write(str(separator) + '\n')
+    output_file.write(str(total_months) + '\n')
+    output_file.write(str(total_amount) + '\n')
+    output_file.write(str(average_change) + '\n')
+    output_file.write(str(greatest_increase) + '\n')
+    output_file.write(str(greatest_decrease) + '\n')
+    output_file.write("End of the report")
